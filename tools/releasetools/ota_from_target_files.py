@@ -434,7 +434,7 @@ class BuildInfo(object):
   def WriteDeviceAssertions(self, script, oem_no_mount):
     # Read the property directly if not using OEM properties.
     if not self.oem_props:
-      script.AssertDevice(self.device)
+      # script.AssertDevice(self.device)
       return
 
     # Otherwise assert OEM properties.
